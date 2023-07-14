@@ -65,4 +65,4 @@ const ContactForm = (props) => {
     )
 }
 
-export default ContactForm
+export default ContactForm;

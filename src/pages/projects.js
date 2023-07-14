@@ -113,7 +113,7 @@ const Project = ({ title, type, img, link, github }) => {
     );
 };
 
-const projects = () => {
+export default function Projects() {
     return (
         <>
             <Head>
@@ -195,6 +195,4 @@ const projects = () => {
             </main>
         </>
     )
-}
-
-export default projects
+};

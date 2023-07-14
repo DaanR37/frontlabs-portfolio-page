@@ -1,4 +1,3 @@
-import React from 'react'
 
 const MyUserData = {
     name: "Daan Roelofs",
@@ -60,4 +59,5 @@ const MyUserData = {
         facebook: "https://www.facebook.com/daan.roelofs.7/",
     },
 };
+
 export default MyUserData;

@@ -12,11 +12,10 @@ const RainbowHighlight = ({ color, children }) => {
             iterations={1}
             animationDuration={animationDuration}
             color={color}
-            // animationDuration={2000}
         >
             {children}
         </RoughNotation>
     );
 };
 
-export default RainbowHighlight
+export default RainbowHighlight;

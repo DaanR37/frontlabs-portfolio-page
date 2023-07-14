@@ -23,4 +23,4 @@ const TransitionEffect = () => {
     )
 }
 
-export default TransitionEffect
+export default TransitionEffect;

@@ -8,7 +8,7 @@ import { useInView, useMotionValue, useSpring } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
 import Skills from "@/components/Skills";
-import ExperienceTwo from "@/components/ExperienceTwo";
+import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 
 const AnimatedNumbers = ({ value }) => {
@@ -35,7 +35,7 @@ const AnimatedNumbers = ({ value }) => {
     return <span ref={ref}></span>
 };
 
-export default function about() {
+export default function About() {
     return (
         <>
             <Head>
@@ -47,13 +47,9 @@ export default function about() {
                 <Layout className="pt-16">
                     <AnimatedText text="I am awaken" className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8" />
                     <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
-
-
-                        
-
                         <div className="relative col-span-3 h-max rounded-2xl border-2 border-solid 
-                        border-dark bg-customTwo p-8 dark:bg-dark dark:border-customTwo
-                        xl:col-span-4 md:col-span-8 md:order-1">
+                                border-dark bg-customTwo p-8 dark:bg-dark dark:border-customTwo
+                                xl:col-span-4 md:col-span-8 md:order-1">
                             <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[102%] 
                                 rounded-[2rem] bg-dark dark:bg-customTwo"
                             />
@@ -63,14 +59,10 @@ export default function about() {
                                 className="w-full h-auto rounded-2xl"
                                 priority={true}
                                 sizes="(max-width: 768px) 100vw,
-                (max-width: 1200px) 50vw,
-                33vw"
+                                (max-width: 1200px) 50vw,
+                                33vw"
                             />
                         </div>
-
-
-
-
                         <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:col-span-8 md:order-2">
                             <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                                 Biography
@@ -124,7 +116,7 @@ export default function about() {
                     </div>
                 </Layout>
                 <Skills />
-                <ExperienceTwo />
+                <Experience />
                 <Education />
             </main>
         </>
