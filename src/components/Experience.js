@@ -47,9 +47,9 @@ const Experience = () => {
 
     return (
         <div className="w-full h-full inline-block my-64 px-32 xl:p-24 lg:p-16 md:p-12 sm:p-8 z-0">
-            <h2 className="w-full font-bold text-8xl mb-32 text-center md:text-6xl xs:text-4xl md:mb-16">
+            <h3 className="w-full font-bold text-8xl mb-32 text-center md:text-6xl xs:text-4xl md:mb-16">
                 Experience
-            </h2>
+            </h3>
             <div ref={ref} className="relative w-[75%] mx-auto lg:w-[90%] md:w-full">
                 <motion.div
                     style={{ scaleY: scrollYProgress }}
