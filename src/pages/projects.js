@@ -1,13 +1,12 @@
-import AnimatedText from "@/components/AnimatedText";
-import { GithubIcon } from "@/components/Icons";
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import AnimatedText from "@/components/AnimatedText";
+import TransitionEffect from "@/components/TransitionEffect";
+import { GithubIcon } from "@/components/Icons";
 import { motion } from "framer-motion";
 
-import profilePic2 from "../../public/images/profilepic/profilepic.jpg";
-import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
@@ -32,6 +31,8 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
                     sizes="(max-width: 768px) 100vw,
                 (max-width: 1200px) 50vw,
                 50vw"
+                    width={300}
+                    height={300}
                 />
             </Link>
 
@@ -85,6 +86,8 @@ const Project = ({ title, type, img, link, github }) => {
                     sizes="(max-width: 768px) 100vw,
                 (max-width: 1200px) 50vw,
                 50vw"
+                    width={300}
+                    height={300}
                 />
             </Link>
 
@@ -119,9 +122,10 @@ export default function Projects() {
             <Head>
                 <title>FrontLabs | Projects Page</title>
                 <meta name="description" content="lorem ipsum" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
             <TransitionEffect />
-            <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
+            <section className="relative text-dark w-full min-h-screen mb-16 flex flex-col items-center justify-center dark:text-light">
                 <Layout className="pt-16">
                     <AnimatedText
                         text="I have a dream!"
@@ -133,7 +137,7 @@ export default function Projects() {
                         <div className="col-span-12">
                             <FeaturedProject
                                 title="Lorem kaspuris"
-                                img={profilePic2}
+                                img="/images/profilepic/profilepic.jpg"
                                 summary="Kaspuris prominentum"
                                 link="/"
                                 github="/"
@@ -143,7 +147,7 @@ export default function Projects() {
                         <div className="col-span-6 sm:col-span-12">
                             <Project
                                 title="Lorem kaspuris"
-                                img={profilePic2}
+                                img="/images/profilepic/profilepic.jpg"
                                 summary="Kaspuris prominentum"
                                 link="/"
                                 github="/"
@@ -153,7 +157,7 @@ export default function Projects() {
                         <div className="col-span-6 sm:col-span-12">
                             <Project
                                 title="Lorem kaspuris"
-                                img={profilePic2}
+                                img="/images/profilepic/profilepic.jpg"
                                 summary="Kaspuris prominentum"
                                 link="/"
                                 github="/"
@@ -163,7 +167,7 @@ export default function Projects() {
                         <div className="col-span-12">
                             <FeaturedProject
                                 title="Lorem kaspuris"
-                                img={profilePic2}
+                                img="/images/profilepic/profilepic.jpg"
                                 summary="Kaspuris prominentum"
                                 link="/"
                                 github="/"
@@ -173,7 +177,7 @@ export default function Projects() {
                         <div className="col-span-6 sm:col-span-12">
                             <Project
                                 title="Lorem kaspuris"
-                                img={profilePic2}
+                                img="/images/profilepic/profilepic.jpg"
                                 summary="Kaspuris prominentum"
                                 link="/"
                                 github="/"
@@ -183,7 +187,7 @@ export default function Projects() {
                         <div className="col-span-6 sm:col-span-12">
                             <Project
                                 title="Lorem kaspuris"
-                                img={profilePic2}
+                                img="/images/profilepic/profilepic.jpg"
                                 summary="Kaspuris prominentum"
                                 link="/"
                                 github="/"
@@ -192,7 +196,7 @@ export default function Projects() {
                         </div>
                     </div>
                 </Layout>
-            </main>
+            </section>
         </>
     )
 };

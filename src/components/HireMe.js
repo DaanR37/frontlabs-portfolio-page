@@ -3,7 +3,7 @@ import { CircText2 } from "./Icons";
 
 const HireMe = () => {
     return (
-        <div className="fixed right-6 bottom-4 flex items-center 
+        <div className="absolute bottom-0 right-0 flex items-center 
         justify-center overflow-hidden md:right-8 md:left-auto 
         md:top-0 md:bottom-auto md:absolute sm:right-0">
 
@@ -21,6 +21,6 @@ const HireMe = () => {
             </div>
         </div>
     )
-}
+};
 
 export default HireMe;

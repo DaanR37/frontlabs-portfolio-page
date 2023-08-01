@@ -1,0 +1,23 @@
+.btn {
+    &:after {
+        background: purple;
+        content: "";
+        height: 100px;
+        filter: blur(10px);
+        left: -100px;
+        opacity: 0.9;
+        position: absolute;
+        top: -15px;
+        transform: rotate(35deg);
+        transition: all 650ms cubic-bezier(0.19, 1, 0.22, 1);
+        width: 50px;
+        z-index: -10;
+    }
+}
+
+.btn:hover {
+    &:after {
+        left: 150%;
+        transition: all 950ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+}

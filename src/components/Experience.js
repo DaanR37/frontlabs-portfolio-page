@@ -7,7 +7,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
 
     return (
         <motion.li ref={ref} className="relative flex flex-col mt-0 mb-[5.5rem] 
-        first:mt-0 last:mb-0 w-60% mx-auto items-center jc"
+        first:mt-0 last:mb-0 w-60% mx-auto items-center"
             initial={{ y: 50 }}
             whileInView={{ y: 0 }}
             transition={{ duration: 0.5, type: "spring" }}

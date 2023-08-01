@@ -15,14 +15,14 @@ const LiIcon = ({ reference }) => {
                 className="absolute -translate-x-[100px] -rotate-90"
             >
                 <circle cx="50" cy="50" r="30" pathLength="1"
-                    className="bg stroke-[5%] stroke-[var(--accent)] fill-none opacity-[0.2]"
+                    className="bg stroke-[5%] stroke-[purple] fill-none opacity-[0.2]"
                 />
                 <motion.circle
                     cx="50"
                     cy="50"
                     r="30"
                     pathLength="1"
-                    className="indicator stroke-[5%] stroke-[var(--accent)] fill-none"
+                    className="indicator stroke-[5%] stroke-[purple] fill-none"
                     style={{ pathLength: scrollYProgress }}
                 />
             </svg>

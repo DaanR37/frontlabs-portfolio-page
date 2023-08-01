@@ -6,6 +6,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Loader from "../components/Loader";
 import ContactForm from "@/components/ContactForm";
+import NavBar from "@/components/NavBar";
 
 export default function Contact() {
     const [name, setName] = useState("");
@@ -77,11 +78,13 @@ export default function Contact() {
             <Head>
                 <title>FrontLabs | Contact Page</title>
                 <meta name="description" content="lorem ipsum" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
             <TransitionEffect />
             <div className={`${loading ? 'blur-xs' : ''}`}>
                 {loading && <Loader />}
-                <main className={`relative text-dark w-full min-h-screen dark:text-light`}>
+                <section className={`relative text-dark w-full h-[150vh] min-h-screen dark:text-light`}>
+                    <NavBar />
                     <div className={`max-w-6xl mx-auto h-48 antialiased z-0`}>
                         <h1 className=" text-5xl 2xl:text-8xl md:text-9xl font-bold py-20 text-center 2xl:text-left md:text-left">
                             Contact
@@ -158,7 +161,7 @@ export default function Contact() {
                             />
                         </div>
                     </div>
-                </main>
+                </section>
             </div>
         </>
     );
